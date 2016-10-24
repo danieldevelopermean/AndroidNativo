@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lista de Produtos"
+        android:id="@+id/textView7" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_weight="0.74">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView9"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:text="Produto"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Quantidade"
+                android:id="@+id/textView8"
+                android:layout_row="0"
+                android:layout_column="7" />
+
+            <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV 40 polegadas - R$ 1855,00"
+            android:id="@+id/ALIM_BBono"
+            android:layout_row="1"
+            android:layout_column="5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText1"
+                android:layout_row="1"
+                android:layout_column="7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Microondas - R$ 399,99"
+                android:id="@+id/checkBox2"
+                android:layout_row="2"
+                android:layout_column="5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_row="2"
+                android:layout_column="7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DVD Player - R$ 120,80 "
+                android:id="@+id/ELETRO_CHECK1"
+                android:layout_row="3"
+                android:layout_column="5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/ELETRO_QUANT1"
+                android:layout_row="3"
+                android:layout_column="7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4  - R$ 1990,99"
+                android:id="@+id/ELETRO_CHECK2"
+                android:layout_row="4"
+                android:layout_column="5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/ELETRO_QUANT2"
+                android:layout_row="4"
+                android:layout_column="7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lavadora de Roupas - R$ 1879,00"
+                android:id="@+id/ALIM_Pizza"
+                android:layout_row="5"
+                android:layout_column="5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/ALIM_QUANT2"
+                android:layout_row="5"
+                android:layout_column="7" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total"
+        android:id="@+id/textView11" />
+
+    <EditText
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ALIM_Total" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Seleção"
+        android:id="@+id/btnSalvar"
+        android:onClick="onClickAlimento"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Carregar "
+        android:id="@+id/btnCarregar" />
+
+</LinearLayout>
